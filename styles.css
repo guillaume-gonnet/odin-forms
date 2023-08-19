@@ -1,0 +1,45 @@
+@font-face {
+    font-family: myFont;
+    src: url(./Resources/Norse-Bold.otf);
+}
+
+container {
+    display: flex;
+    flex-direction: row;
+    width: 100vh;
+    height: 100vh;
+}
+
+#left-part {
+    background-image: url(./Resources/halie-west-25xggax4bSA-unsplash\(1\).jpg);
+    background-size: cover;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    width: 100%;
+    display: block;
+    color: white;
+    text-align: center;
+    flex: 1 1 auto;
+}
+
+
+#logo>img {
+    height: 70px;
+}
+
+#logo>span {
+    text-align: left;
+    text-emphasis: bold;
+    font-size: 50px;
+    font-family: myFont;
+    line-height: 7em;
+}
+
+#footpage {
+    color: white;
+    flex: 0 0 auto;
+}
