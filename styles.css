@@ -6,8 +6,9 @@
 container {
     display: flex;
     flex-direction: row;
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
+    margin: 0;
 }
 
 #left-part {
@@ -15,12 +16,12 @@ container {
     background-size: cover;
     display: flex;
     flex-direction: column;
+    width: 25vw;
 }
 
 #logo {
     display: block;
     color: white;
-    text-align: center;
     flex: 1 1 auto;
     padding: 10rem 0;
 }
@@ -38,7 +39,7 @@ container {
 }
 
 #odin>div {
-    text-emphasis: bold;
+    font-weight: bold;
     font-size: 50px;
     font-family: myFont;
 }
@@ -46,4 +47,61 @@ container {
 #footpage {
     color: white;
     flex: 0 0 auto;
+    padding: 5px;
+}
+
+#right-part {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+}
+
+#right-part>header {
+    flex: 1 1 calc(100% /3);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(247, 240, 240);
+
+}
+
+#right-part>#middle-container {
+    flex: 1 1 calc(100% /3);
+    padding: 20px;
+}
+
+#right-part>footer {
+    flex: 1 1 calc(100% /3);
+    padding: 20px;
+    background-color: rgb(247, 240, 240);
+    border-top: grey solid;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#first-name,
+#last-name,
+#email,
+#phone,
+#password,
+#password-confirm {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 10px 0;
+    width: 400px;
+}
+
+
+footer>button {
+    background-color: #596D48;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 10px;
 }
