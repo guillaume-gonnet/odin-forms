@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Forms</title>
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -35,36 +36,37 @@
                 <h1>Let's do this!</h1>
 
                 <form>
-
-                    <div id="first-name">
+                    <div class="form-field">
                         <label for="first-name">First Name</label>
                         <input type="text" id="first-name" name="first-name">
                     </div>
 
-                    <div id="last-name">
+                    <div class="form-field">
                         <label for="last-name">Last Name</label>
                         <input type="text" id="last-name" name="last-name">
                     </div>
 
-                    <div id="email">
+                    <div class="form-field">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email">
                     </div>
 
-                    <div id="phone">
+                    <div class="form-field">
                         <label for="phone">Phone Number</label>
                         <input type="tel" id="phone" name="phone">
                     </div>
 
-                    <div id="password">
+                    <div class="form-field">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
+                        <input class="wrong-password" type="password" id="password" name="password">
+
                     </div>
 
-                    <div id="password-confirm">
+                    <div class="form-field">
                         <label for="password-confirm">Confirm password</label>
-                        <input for="password-confirm" id="password-confirm" name="password-confirm">
+                        <input class="wrong-password" type="password" id="password-confirm" name="password-confirm">
                     </div>
+                    <div id="pwd-not-match" class="error-message">* Passwords do not match</div>
                 </form>
             </div>
 
